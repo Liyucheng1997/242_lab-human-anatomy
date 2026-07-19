@@ -1,0 +1,63 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body, #root { height: 100%; }
+body {
+  font-family: system-ui, -apple-system, 'Segoe UI', 'Microsoft YaHei', sans-serif;
+  background: #0e1116;
+  color: #e6e9ef;
+  overflow: hidden;
+}
+.app { display: flex; height: 100vh; width: 100vw; }
+.stage {
+  flex: 1 1 auto;
+  min-width: 0;
+  height: 100vh;
+  position: relative;
+  background: radial-gradient(circle at 50% 40%, #1a2130 0%, #0e1116 70%);
+}
+.stage canvas { display: block; width: 100% !important; height: 100% !important; }
+.tooltip {
+  position: fixed; left: 0; top: 0; z-index: 10;
+  transform: translate(-50%, calc(-100% - 14px));
+  padding: 6px 12px; border-radius: 999px;
+  background: rgba(255,255,255,0.95); color: #1a2029;
+  font-size: 13px; font-weight: 600; white-space: nowrap;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+  pointer-events: none; opacity: 0; transition: opacity .1s;
+}
+.panel {
+  width: 320px;
+  padding: 24px 22px;
+  background: #12161d;
+  border-left: 1px solid #232a35;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.panel h1 { font-size: 22px; font-weight: 700; }
+.sub { color: #8a93a3; font-size: 13px; }
+.layers { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip {
+  border: 1px solid #2a323f; background: #1a2029; color: #b6bdc9;
+  padding: 6px 12px; border-radius: 999px; font-size: 13px; cursor: pointer;
+  transition: all .15s;
+}
+.chip:hover { border-color: #3a4658; }
+.chip.on { background: #24405f; border-color: #3f6ea5; color: #cfe0f5; }
+.card {
+  background: #1a2029;
+  border: 1px solid #2a323f;
+  border-radius: 12px;
+  padding: 16px;
+}
+.card .zh { font-size: 24px; font-weight: 700; color: #ff8a80; margin-bottom: 2px; }
+.card .en { font-size: 13px; color: #9aa4b2; margin-bottom: 12px; word-break: break-word; }
+.card .row { display: flex; justify-content: space-between; gap: 12px; font-size: 13px; padding: 6px 0; border-top: 1px solid #232a35; }
+.card .row span { color: #8a93a3; }
+.card .row b { color: #e6e9ef; text-align: right; word-break: break-all; }
+.card .block { padding-top: 10px; border-top: 1px solid #232a35; margin-top: 8px; }
+.card .block .lbl { font-size: 12px; color: #7aa2f7; font-weight: 700; margin-bottom: 4px; letter-spacing: .05em; }
+.card .block p { font-size: 13.5px; line-height: 1.75; color: #d4dae4; }
+.card .todo { margin-top: 10px; font-size: 12px; color: #8a93a3; }
+.hint { color: #8a93a3; font-size: 14px; line-height: 1.7; }
+.attribution { margin-top: auto; color: #6b7382; font-size: 12px; line-height: 1.6; }
+.attribution a { color: #7aa2f7; }

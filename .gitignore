@@ -1,0 +1,18 @@
+# 依赖
+node_modules/
+
+# 构建产物
+dist/
+.vite/
+
+# Blender 大文件（超 GitHub 100MB 上限，从上游重新下载即可）
+assets_source/Z-Anatomy/
+assets_source/*.zip
+assets_source/*.7z
+
+# 系统/编辑器
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/

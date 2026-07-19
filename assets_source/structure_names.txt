@@ -1,0 +1,790 @@
+(Abdominal part of pectoralis major muscle)
+(Accessory parotid gland)
+(Adductor minimus)
+(Iliopectineal bursa)
+(Opponens digiti minimi muscle of foot)
+Abductor digiti minimi of foot
+Abductor digiti minimi of hand
+Abductor hallucis
+Abductor pollicis brevis
+Abductor pollicis longus
+Accessory nucleus of oculomotor nerve
+Acromial part of deltoid muscle
+Adductor brevis
+Adductor longus
+Adductor magnus
+Adenohypophysis
+Ampulla of lacrimal canaliculus
+Amygdaloid body
+Anconeus muscle
+Angular gyrus
+Anserine bursa
+Antebrachial fascia
+Anterior belly of digastric muscle
+Anterior cells of ethmoid bone
+Anterior chamber of eyeball
+Anterior cochlear nucleus
+Anterior commissure
+Anterior communicating artery
+Anterior corticospinal tract
+Anterior fasciculus proprius
+Anterior horn of spinal cord
+Anterior intermuscular septum of leg
+Anterior lateral segment of liver (VI)
+Anterior layer of thoracolumbar fascia
+Anterior medial segment of liver (V)
+Anterior occipital sulcus*
+Anterior papillary muscle of right ventricle
+Anterior quadrangular lobule
+Anterior segment of eyeball
+Anterior semilunar leaflet of pulmonary valve
+Anterior spinocerebellar tract
+Anterior spinothalamic tract
+Aqueduct of midbrain
+Ary-epiglottic part of oblique arytenoid muscle
+Arytenoid cartilage
+Ascending colon
+Ascending part of trapezius muscle
+Atlas (C1)
+Auditory tube
+Axis (C2)
+Base of peduncle
+Basilar venous plexus
+Bicipitoradial bursa
+Biventral lobule
+Body of sternum
+Brachial fascia
+Brachialis muscle
+Brachioradialis muscle
+Bucinator
+Bursa of piriformis muscle
+Calcaneal tendon
+Calcaneus
+Calcarine sulcus
+Capitate bone
+Caudate nucleus
+Cavernous sinus
+Central canal
+Central lobule
+Central sulcus
+Choroid plexus
+Cingulate gyrus (Posteroventral part*)
+Cingulate gyrus and sulcus (Middle anterior part)
+Cingulate gyrus and sulcus (Middle posterior part)
+Cingulate gyrus and sulcus (Posterior dorsal part)
+Cingulate sulcus (Marginal part*)
+Circular sulcus of insula
+Clavicle
+Clavicular head of pectoralis major muscle
+Clavicular part of deltoid muscle
+Clavipectoral fascia
+Coccygeus muscle
+Coccyx
+Cochlea
+Cochlear nerve
+Collateral sulcus
+Common flexor tendon sheath
+Common tendinous ring
+Common tendon sheath of fibularis muscles
+Coracobrachial bursa
+Coracobrachialis muscle
+Cornea
+Corniculate cartilage
+Corpus callosum
+Corpus cavernosum of penis
+Corpus spongiosum of penis
+Corrugator supercilii
+Costal cartilage of eighth rib
+Costal cartilage of fifth rib
+Costal cartilage of first rib
+Costal cartilage of fourth rib
+Costal cartilage of ninth rib
+Costal cartilage of second rib
+Costal cartilage of seventh rib
+Costal cartilage of sixth rib
+Costal cartilage of tenth rib
+Costal cartilage of third rib
+Cricoid cartilage
+Cruciform part of fibrous sheath of digit of hand
+Crural fascia
+Cuboid bone
+Culmen
+Cuneate fasciculus
+Cuneus
+Declive
+Deep head of flexor pollicis brevis
+Deep head of pronator teres
+Deep infrapatellar bursa
+Deep part of masseter
+Deltoid fascia
+Depressor anguli oris
+Depressor labii inferioris
+Depressor septi nasi
+Descending colon
+Descending part of trapezius muscle
+Diaphragm
+Diaphragmatic fascia
+Distal phalanx of fifth finger of foot
+Distal phalanx of fifth finger of hand
+Distal phalanx of first finger of foot
+Distal phalanx of first finger of hand
+Distal phalanx of fourth finger of foot
+Distal phalanx of fourth finger of hand
+Distal phalanx of second finger of foot
+Distal phalanx of second finger of hand
+Distal phalanx of third finger of foot
+Distal phalanx of third finger of hand
+Dorsal fascia of hand
+Dorsal interossei muscles of foot
+Dorsal interossei muscles of hand
+Dorsal parts of lateral intertransversarii lumborum muscles
+Duodenum
+Eighth rib
+Eleventh rib
+Epicranial aponeurosis
+Epididymis
+Epiglottis
+Equator of eyeball
+Ethmoid bone
+Extensor carpi radialis brevis
+Extensor carpi radialis longus
+Extensor digiti minimi
+Extensor digitorum
+Extensor digitorum brevis
+Extensor digitorum longus
+Extensor hallucis brevis
+Extensor hallucis longus
+Extensor indicis
+Extensor pollicis brevis
+Extensor pollicis longus
+Extensor retinaculum of wrist
+External abdominal oblique muscle
+External anal sphincter
+External axis of eyeball
+External intercostal muscles
+External part of thyro-arytenoid muscle
+Falx cerebri
+Fascia lata
+Femur
+Fibula
+Fibularis brevis muscle
+Fibularis longus muscle
+Fibularis tertius muscle
+Fifth metacarpal bone
+Fifth metatarsal bone
+Fifth rib
+First metacarpal bone
+First metatarsal bone
+First rib
+Flexor carpi radialis
+Flexor digiti minimi of foot
+Flexor digiti minimi of hand
+Flexor digitorum brevis
+Flexor digitorum longus
+Flexor digitorum profundus
+Flexor hallucis longus
+Flexor pollicis longus
+Flexor retinaculum of ankle
+Flexor retinaculum of wrist
+Flocculus
+Folium of vermis
+Fornix
+Fourth metacarpal bone
+Fourth metatarsal bone
+Fourth rib
+Fourth ventricle
+Free taenia
+Frontal bone
+Frontalis muscle
+Gallbladder
+Ganglia of sympathetic trunk
+Genioglossus muscle
+Geniohyoid muscle
+Gingiva
+Glans penis
+Globus pallidus
+Gluteus maximus muscle
+Gluteus medius muscle
+Gluteus minimus muscle
+Gracile fasciculus
+Gracile lobule
+Gracilis muscle
+Greater omentum
+Habenula
+Hamate bone
+Hip bone
+Hippocampal commissure
+Hippocampus
+Humeral head of extensor carpi ulnaris
+Humeral head of flexor carpi ulnaris
+Humero-ulnar head of flexor digitorum superficialis
+Humerus
+Hyoglossus muscle
+Hyoid bone
+Hypothalamus
+Iliacus muscle
+Iliococcygeus muscle
+Iliocostalis colli muscle
+Iliocostalis lumborum muscle
+Iliocostalis thoracis muscle
+Iliopectineal arch
+Iliopsoas fascia
+Iliotibial tract
+Incus
+Inferior colliculus
+Inferior extensor retinaculum of ankle
+Inferior fibular retinaculum
+Inferior frontal sulcus
+Inferior gemellus muscle
+Inferior head of lateral pterygoid muscle
+Inferior leaflet of right atrioventricular valve
+Inferior lobe of left lung
+Inferior lobe of right lung
+Inferior nasal concha bone
+Inferior oblique muscle
+Inferior occipital gyrus and sulcus*
+Inferior papillary muscle of left ventricle
+Inferior papillary muscle of right ventricle
+Inferior parathyroid gland
+Inferior pharyngeal constrictor
+Inferior rectus muscle
+Inferior salivatory nucleus
+Inferior semilunar lobule
+Inferior subtendinous bursa of biceps femoris muscle
+Inferior tarsus
+Inferior temporal gyrus
+Inferior temporal sulcus
+Infraspinatus muscle
+Inguinal ligament
+Innermost intercostal muscles
+Insula (Subcentral gyrus and ant. and post. sulci*)
+Intermediate cuneiform bone
+Intermediate tendon of digastric muscle
+Intermediolateral nucleus
+Intermediomedial nucleus
+Intermuscular gluteal bursae
+Internal abdominal oblique muscle
+Internal axis of eyeball
+Internal intercostal muscles
+Interpeduncular fossa
+Interspinales colli muscles
+Interspinales lumborum muscles
+Interspinales thoracis muscles
+Intertubercular tendon sheath
+Intraparietal sulcus
+Investing abdominal fascia
+Iris
+Kidney
+Lacrimal bone
+Lacrimal canaliculus
+Lacrimal gland
+Lacrimal sac
+Laryngopharynx
+Lat_Fis-ant-Horizont
+Lat_Fis-ant-Vertical
+Lat_Fis-post
+Lateral corticospinal tract
+Lateral crico-arytenoid muscle
+Lateral cuneiform bone
+Lateral fasciculus proprius
+Lateral femoral intermuscular septum
+Lateral geniculate body
+Lateral head of flexor hallucis brevis
+Lateral head of gastrocnemius
+Lateral head of triceps brachii
+Lateral intermediate substance
+Lateral intermuscular septum of arm
+Lateral occipital gyrus (Middle occipital gyrus*)
+Lateral occipitotemporal gyrus
+Lateral patellar retinaculum
+Lateral process of nasal septal cartilage
+Lateral rectus muscle
+Lateral reticulospinal tract
+Lateral spinothalamic tract
+Lateral subtendinous bursa of gastrocnemius muscle
+Lateral ventricle
+Lateral vestibulospinal tract
+Latissimus dorsi muscle
+Left anterior lateral segment of liver (III)
+Left atrium
+Left coronary leaflet
+Left medial segment of liver (IV)
+Left posterior lateral segment of liver (II)
+Left semilunar leaflet of pulmonary valve
+Left ventricle
+Lens
+Lentiform nucleus
+Lesser omentum
+Levator anguli oris
+Levator labii superioris
+Levator nasolabialis
+Levator palpebrae superioris
+Levator scapulae
+Levatores breves costarum
+Levatores longi costarum
+Linea alba
+Lingual gyrus
+Lingula of cerebellum
+Liver
+Long head of biceps brachii
+Long head of biceps femoris
+Long head of triceps brachii
+Longissimus capitis muscle
+Longissimus colli muscle
+Longissimus thoracis muscle
+Longus capitis muscle
+Longus colli muscle
+Lower canine
+Lower first molar tooth
+Lower first premolar
+Lower lateral incisor
+Lower medial incisor
+Lower second molar tooth
+Lower second premolar
+Lumbrical muscles of foot
+Lumbrical muscles of hand
+Lunate bone
+Lunate sulcus
+Major alar cartilage
+Malleus
+Mamillary body
+Mandible
+Manubrium of sternum
+Masseteric fascia
+Maxilla
+Medial cuneiform bone
+Medial femoral intermuscular septum
+Medial geniculate body
+Medial head of flexor hallucis brevis
+Medial head of gastrocnemius
+Medial head of triceps brachii
+Medial intermuscular septum of arm
+Medial occipitotemporal gyrus (Parahippocampal*)
+Medial patellar retinaculum
+Medial pterygoid muscle
+Medial rectus muscle
+Medial reticulospinal tract
+Medial subtendinous bursa of gastrocnemius muscle
+Medial vestibulospinal tract
+Medulla oblongata
+Mentalis muscle
+Meridians of eyeball
+Meso-appendix
+Mesocolic taenia
+Mesocolon
+Midbrain
+Middle cells of ethmoid bone
+Middle frontal gyrus
+Middle layer of thoracolumbar fascia
+Middle lobe of right lung
+Middle phalanx of fifth finger of foot
+Middle phalanx of fifth finger of hand
+Middle phalanx of fourth finger of foot
+Middle phalanx of fourth finger of hand
+Middle phalanx of second finger of foot
+Middle phalanx of second finger of hand
+Middle phalanx of third finger of foot
+Middle phalanx of third finger of hand
+Middle pharyngeal constrictor
+Middle temporal gyrus
+Motor nucleus of facial nerve
+Motor root of trigeminal nerve
+Mucosa of nasal cavity
+Mucosa of stomach
+Multifidus colli muscle
+Multifidus lumborum muscle
+Multifidus thoracis muscle
+Muscular system.g
+Mylohyoid muscle
+Nasal bone
+Nasal septal cartilage
+Nasalis muscle
+Nasolacrimal duct
+Nasopharynx
+Navicular bone
+Nervous system & Sense organs.g
+Neurohypophysis
+Ninth rib
+Nodule of vermis
+Non-coronary leaflet
+Nucleus ambiguus
+Nucleus of abducens nerve
+Nucleus of accessory nerve
+Nucleus of hypoglossal nerve
+Nucleus of oculomotor nerve
+Nucleus of solitary tract
+Nucleus of trochlear nerve
+Nucleus proprius
+Oblique head of adductor hallucis
+Oblique head of adductor pollicis
+Oblique part of cricothyroid muscle
+Obliquus inferior capitis muscle
+Obliquus superior capitis muscle
+Obturator externus
+Obturator internus
+Occipital bone
+Occipital pole
+Occipitalis muscle
+Occipitotemporal sulcus (Lateral part*)
+Olfactory sulcus
+Olive
+Omental taenia
+Omohyoid muscle
+Opercular part of inferior frontal gyrus
+Opponens digiti minimi muscle of hand
+Opponens pollicis muscle
+Optic chiasm
+Optic tract
+Orbicularis oris muscle
+Orbital gyri
+Orbital gyri (Frontomarginal gyrus and sulcus*)
+Orbital part of  inferior frontal gyrus
+Orbital part of orbicularis oculi
+Orbital sulci (H-shaped orbital sulci*)
+Orbital sulci (Lateral Orbital sulcus*)
+Oropharynx
+Palatine bone
+Palatopharyngeus muscle
+Palmar aponeurosis
+Palmar interossei muscles
+Palmaris longus muscle
+Palpebral part of orbicularis oculi
+Pancreas
+Paracentral gyrus and sulcus*
+Paracentral sulcus
+Parietal bone
+Parieto-occipital sulcus
+Parotid gland
+Patella
+Pectineus muscle
+Pectoral fascia
+Pectoralis minor muscle
+Peduncle of flocculus
+Peritoneal cavity
+Pineal gland
+Piriformis fascia
+Piriformis muscle
+Pisiform bone
+Plantar aponeurosis
+Plantar interossei muscles
+Plantar tendon sheath of fibularis longus muscle
+Plantaris muscle
+Platysma
+Pleura
+Pons
+Popliteal fascia
+Popliteus muscle
+Postcentral gyrus
+Postcentral sulcus
+Posterior belly of digastric muscle
+Posterior cells of ethmoid bone
+Posterior cochlear nucleus
+Posterior commissure
+Posterior crico-arytenoid muscle
+Posterior fasciculus proprius
+Posterior horn of spinal cord
+Posterior intermuscular septum of leg
+Posterior lateral segment of liver (VII)
+Posterior layer of thoracolumbar fascia
+Posterior leaflet of left atrioventricular valve
+Posterior medial segment of liver (VIII)
+Posterior nucleus of vagus nerve
+Posterior quadrangular lobule
+Posterior segment of eyeball
+Posterior segment of liver (I)
+Posterior spinocerebellar tract
+Posterior transverse collateral sulcus
+Posterolateral tract
+Precentral gyrus
+Precentral sulcus (Superior part)*
+Precentral sulcus (inferior part)*
+Precuneus
+Procerus muscle
+Pronator quadratus
+Prostate
+Proximal phalanx of fifth finger of foot
+Proximal phalanx of fifth finger of hand
+Proximal phalanx of first finger of foot
+Proximal phalanx of first finger of hand
+Proximal phalanx of fourth finger of foot
+Proximal phalanx of fourth finger of hand
+Proximal phalanx of second finger of foot
+Proximal phalanx of second finger of hand
+Proximal phalanx of third finger of foot
+Proximal phalanx of third finger of hand
+Psoas major
+Pubo-analis muscle
+Pubococcygeus muscle
+Pulmonary trunk
+Putamen
+Pyramid of medulla oblongata
+Pyramidalis muscle
+Pyramis of vermis
+Quadratus femoris muscle
+Quadratus lumborum muscle
+Quadratus plantae muscle
+Radial head of flexor digitorum superficialis
+Radius
+Rectus abdominis muscle
+Rectus anterior capitis muscle
+Rectus femoris muscle
+Rectus lateralis capitis muscle
+Rectus posterior major capitis muscle
+Rectus posterior minor capitis muscle
+Red nucleus
+Renal pelvis
+Reticular formation
+Retina
+Rhomboid major muscle
+Rhomboid minor muscle
+Right atrium
+Right coronary leaflet
+Right semilunar leaflet of pulmonary valve
+Right ventricle
+Risorius muscle
+Rotatores
+Rubrospinal tract
+Sacrum
+Sartorius muscle
+Scalenus anterior muscle
+Scalenus medius muscle
+Scalenus posterior muscle
+Scaphoid bone
+Scapula
+Scapular spinal part of deltoid muscle
+Sciatic bursa of gluteus maximus muscle
+Sciatic bursa of obturator internus
+Sclera
+Second metacarpal bone
+Second metatarsal bone
+Second rib
+Semimembranosus bursa
+Semimembranosus muscle
+Seminal gland
+Semispinalis colli muscle
+Semispinalis thoracis muscle
+Semitendinosus muscle
+Sensory root of trigeminal nerve
+Septal leaflet of right atrioventricular valve
+Septal nuclei
+Septal papillary muscle of right ventricle
+Septum pellucidum
+Serratus anterior muscle
+Serratus posterior inferior muscle
+Serratus posterior superior muscle
+Sesamoid bones of foot
+Seventh rib
+Short head of biceps brachii
+Short head of biceps femoris
+Sigmoid colon
+Sinus of frontal bone
+Sinus of sphenoid bone
+Sixth rib
+Skeletal system.g
+Soft palate
+Soleus muscle
+Sphenoid bone
+Spinal dura
+Spinal ganglion
+Spinal reticular process
+Spinalis capitis muscle
+Spinalis colli muscle
+Spinalis thoracis muscle
+Spinotectal tract
+Splenius capitis muscle
+Splenius colli muscle
+Stapes
+Sternocleidomastoid muscle
+Sternocostal head of pectoralis major muscle
+Sternohyoid muscle
+Sternothyroid muscle
+Stomach
+Straight gyrus (Gyrus rectus)
+Straight part of cricothyroid muscle
+Stria medullaris thalami
+Stria terminalis
+Stylohyoid muscle
+Stylopharyngeus muscle
+Subacromial bursa
+Subclavius muscle
+Subcutaneous acromial bursa
+Subcutaneous bursa of lateral malleolus
+Subcutaneous bursa of medial malleolus
+Subcutaneous bursa of tuberosity of tibia
+Subcutaneous calcaneal bursa
+Subcutaneous infrapatellar bursa
+Subcutaneous prepatellar bursa
+Subcutaneous trochanteric bursa
+Subdeltoid bursa
+Subfacial prepatellar bursa
+Sublingual gland
+Submandibular gland
+Subparietal sulcus
+Subscapularis muscle
+Subtendinous bursa of iliacus muscle
+Subtendinous bursa of infraspinatus muscle
+Subtendinous bursa of obturator internus
+Subtendinous bursa of sartorius muscle
+Subtendinous bursa of teres major muscle
+Subtendinous bursa of tibialis anterior
+Subtendinous bursa of trapezius muscle
+Subtendinous bursa of triceps brachii muscle
+Subtendinous calcaneal bursa
+Subtendinous prepatellar bursa
+Sulcus interm_prim-Jensen
+Superficial head of flexor pollicis brevis
+Superficial head of pronator teres
+Superficial investing cervical fascia
+Superficial layer of temporal fascia
+Superficial part of masseter
+Superficial transverse metacarpal ligament
+Superficial transverse metatarsal ligament
+Superior bursa of biceps femoris muscle
+Superior cerebellar peduncle
+Superior colliculus
+Superior extensor retinaculum of ankle
+Superior fibular retinaculum
+Superior frontal gyrus
+Superior frontal sulcus
+Superior gemellus muscle
+Superior head of lateral pterygoid muscle
+Superior lobe of left lung
+Superior lobe of right lung
+Superior oblique muscle
+Superior occipital gyri
+Superior parathyroid gland
+Superior parietal lobule
+Superior pharyngeal constrictor
+Superior rectus muscle
+Superior salivatory nucleus
+Superior semilunar lobule
+Superior tarsus
+Superior temporal gyrus (Lateral part)
+Superior temporal sulcus
+Supinator
+Supramarginal gyrus
+Suprapatellar bursa
+Suprarenal gland
+Supraspinatus muscle
+Suspensory ligament of eyeball
+Synovial sheaths of digits of hand
+Talus
+Tectospinal tract
+Temporal bone
+Temporal plane
+Temporal pole
+Temporalis muscle
+Temporoparietalis muscle
+Tendinous arch of levator ani
+Tendon of extensor digitorum longus
+Tendon sheath - abd. pollicis longus - ext. pollicis brevis
+Tendon sheath of extensor carpi ulnaris
+Tendon sheath of extensor digiti minimi manus
+Tendon sheath of extensor digitorum and extensor indicis
+Tendon sheath of extensor digitorum longus
+Tendon sheath of extensor hallucis longus
+Tendon sheath of extensor pollicis longus
+Tendon sheath of extensors carpi radialis
+Tendon sheath of flexor carpi radialis
+Tendon sheath of flexor digitorum longus
+Tendon sheath of flexor hallucis longus
+Tendon sheath of flexor pollicis longus
+Tendon sheath of tibialis anterior
+Tendon sheath of tibialis posterior muscle
+Tensor fasciae latae
+Tenth rib
+Tentorium cerebelli
+Teres major muscle
+Teres minor muscle
+Testis
+Thalamus
+Third metacarpal bone
+Third metatarsal bone
+Third rib
+Third ventricle
+Thyro-epiglottic part of thyro-arytenoid muscle
+Thyrohyoid muscle
+Thyroid cartilage
+Thyroid gland
+Tibia
+Tibialis anterior muscle
+Tibialis posterior muscle
+Tongue
+Tonsil of cerebellum
+Trachea
+Transversalis fascia
+Transverse arytenoid muscle
+Transverse colon
+Transverse frontopolar gyrus and sulcus*
+Transverse head of adductor hallucis
+Transverse head of adductor pollicis
+Transverse intermuscular septum of leg
+Transverse occipital sulcus
+Transverse part of trapezius muscle
+Transverse temporal gyri
+Transversus abdominis muscle
+Transversus thoracis muscle
+Trapezium bone
+Trapezoid bone
+Triangular part of inferior frontal gyrus
+Triquetrum bone
+Trochanteric bursa of gluteus maximus muscle
+Trochanteric bursa of gluteus medius muscle
+Trochanteric bursa of gluteus minimus muscle
+Trochlea of superior oblique muscle
+Tuber of vermis
+Twelfth rib
+Tympanic membrane
+Ulna
+Ulnar head of extensor carpi ulnaris
+Ulnar head of flexor carpi ulnaris
+Upper canine
+Upper first molar tooth
+Upper first premolar
+Upper lateral incisor
+Upper medial incisor
+Upper second molar tooth
+Upper second premolar
+Urinary bladder
+Uvula of palate
+Uvula of vermis
+Vastus intermedius muscle
+Vastus lateralis muscle
+Vastus medialis muscle
+Ventral parts of lateral intertransversarii lumborum muscles
+Vermiform appendix
+Vertebra C3
+Vertebra C4
+Vertebra C5
+Vertebra C6
+Vertebra C7
+Vertebra L1
+Vertebra L2
+Vertebra L3
+Vertebra L4
+Vertebra L5
+Vertebra T1
+Vertebra T10
+Vertebra T11
+Vertebra T12
+Vertebra T2
+Vertebra T3
+Vertebra T4
+Vertebra T5
+Vertebra T6
+Vertebra T7
+Vertebra T8
+Vertebra T9
+Vestibular nuclei
+Vestibule
+Visceral systems.g
+Vitreous body
+Vomer
+White matter of spinal cord
+White matter of telencephalon
+Wing of central lobule
+Xiphoid process
+Zonular fibres
+Zygomatic bone
+Zygomaticus major muscle
+Zygomaticus minor muscle
