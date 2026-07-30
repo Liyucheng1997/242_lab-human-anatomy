@@ -6,14 +6,14 @@ import { lookup } from './labels.js'
 
 // 各解剖系统图层（从 Z-Anatomy 的 Startup.blend 导出）
 const LAYERS = [
-  { id: 'skeleton',       url: '/models/skeleton.glb',       zh: '骨骼系统' },
-  { id: 'muscular',       url: '/models/muscular.glb',       zh: '肌肉系统' },
-  { id: 'cardiovascular', url: '/models/cardiovascular.glb', zh: '心血管系统' },
-  { id: 'nervous',        url: '/models/nervous.glb',        zh: '神经与感官' },
-  { id: 'visceral',       url: '/models/visceral.glb',       zh: '内脏系统' },
+  { id: 'skeleton',       url: 'models/skeleton.glb',       zh: '骨骼系统' },
+  { id: 'muscular',       url: 'models/muscular.glb',       zh: '肌肉系统' },
+  { id: 'cardiovascular', url: 'models/cardiovascular.glb', zh: '心血管系统' },
+  { id: 'nervous',        url: 'models/nervous.glb',        zh: '神经与感官' },
+  { id: 'visceral',       url: 'models/visceral.glb',       zh: '内脏系统' },
 ]
 
-LAYERS.forEach((l) => useGLTF.preload(l.url, '/draco/'))
+LAYERS.forEach((l) => useGLTF.preload(l.url, 'draco/'))
 
 const SELECT_COLOR = new THREE.Color('#ff5252')
 const HOVER_EMISSIVE = new THREE.Color('#ffd24a')
@@ -34,7 +34,7 @@ function setHover(o, on) {
 }
 
 function Layer({ url, layerId, onPick, selected, hover }) {
-  const { scene } = useGLTF(url, '/draco/')
+  const { scene } = useGLTF(url, 'draco/')
   const original = useRef(new Map())
   const hoveredRef = useRef(null)
 
