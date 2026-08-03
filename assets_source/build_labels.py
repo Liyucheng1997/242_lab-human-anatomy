@@ -25,6 +25,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MODELS = os.path.join(ROOT, 'public', 'models')
 OUT = os.path.join(ROOT, 'src', 'anatomy.json')
+OUT_OVERRIDES = os.path.join(ROOT, 'src', 'mesh-overrides.json')
 TA2_CSV = os.path.join(ROOT, 'assets_source', 'TA2.csv')
 WD_JSON = os.path.join(ROOT, 'assets_source', 'wikidata_ta2.json')
 
@@ -238,6 +239,76 @@ def register_all():
         add(tbl)
 
 
+# ------------------------------------------------ three.js 运行时名 / 歧义表
+# three.js 的 GLTFLoader 会用 PropertyBinding.sanitizeNodeName() 处理节点名：
+# 空格换成下划线，并删除 [ ] . : / 。点被删掉后侧别与编号后缀会糊在词尾，
+# 例如 "Vertebra T1.001" 与 "Vertebra T10.001" 分别变成 vertebra_t1001 与
+# vertebra_t10001——此时切分点无法由字符串本身确定（t1+001 还是 t10+001）。
+#
+# 绝大多数名称只有一种切法能命中词典，前端按候选逐个试即可。这里只把**确实存在
+# 多种合法切法**的名称导出成一张小的歧义表交给前端，避免它去猜。歧义与否由数据
+# 本身决定，模型换了重跑即可，不依赖前端用的是哪种试探顺序。
+def runtime_name(raw):
+    """复现 three.js 的 sanitizeNodeName + 前端 clean() 的规范化。"""
+    s = raw.replace('*', '').lower()
+    s = re.sub(r'\s', '_', s)
+    s = re.sub(r'[\[\].:/]', '', s)
+    s = re.sub(r'_+', '_', s)
+    return s.strip('_')
+
+
+def sanitize_key(k):
+    s = re.sub(r'\s', '_', k)
+    s = re.sub(r'[\[\].:/]', '', s)
+    s = re.sub(r'_+', '_', s)
+    return s.strip('_')
+
+
+SIDE_LETTERS = 'lrjmsg'
+
+
+def candidate_keys(rt, by_sanitized):
+    """列出 rt 所有能命中词典的切分，返回 [(key, side), ...]。"""
+    out = []
+    if rt in by_sanitized:
+        out.append((by_sanitized[rt], ''))
+    m = re.search(r'\d+$', rt)
+    digits = m.group(0) if m else ''
+    for n in range(1, len(digits) + 1):
+        cut = rt[:-n]
+        if cut in by_sanitized:
+            out.append((by_sanitized[cut], ''))
+        if cut and cut[-1] in SIDE_LETTERS and cut[:-1] in by_sanitized:
+            out.append((by_sanitized[cut[:-1]], cut[-1]))
+    # 去重保序
+    return list(dict.fromkeys(out))
+
+
+def build_overrides(out):
+    """扫描全部 mesh 名，导出歧义表 {运行时名: [词典键, 侧别字母]}。"""
+    by_sanitized = {sanitize_key(k): k for k in out}
+    overrides = {}
+    seen = 0
+    for fn in sorted(os.listdir(MODELS)):
+        if not fn.endswith('.glb'):
+            continue
+        js = glb_json(os.path.join(MODELS, fn))
+        for node in js.get('nodes', []):
+            if 'mesh' not in node:
+                continue
+            raw = node.get('name', '')
+            seen += 1
+            rt = runtime_name(raw)
+            cands = candidate_keys(rt, by_sanitized)
+            if len(cands) <= 1:
+                continue
+            # 真实答案取自未经 sanitize 的原始名，可靠
+            truth_key = key_of(base_name(raw))
+            m = re.search(r'\.([lr])(?:\.\d+)?$', raw)
+            overrides[rt] = [truth_key, m.group(1) if m else '']
+    return overrides, seen
+
+
 def build():
     register_all()
     structures = collect_structures()
@@ -268,11 +339,18 @@ def build():
     with open(OUT, 'w', encoding='utf-8') as f:
         json.dump(out, f, ensure_ascii=False, indent=0, sort_keys=True)
 
+    overrides, mesh_count = build_overrides(out)
+    with open(OUT_OVERRIDES, 'w', encoding='utf-8') as f:
+        json.dump(overrides, f, ensure_ascii=False, indent=0, sort_keys=True)
+
     total = len(out)
     done = total - len(missing)
     print(f'结构总数 {total}  已录中文 {done} ({done*100//total}%)  待补 {len(missing)}')
     print(f'拉丁名覆盖 {sum(1 for v in out.values() if v.get("la"))}')
     print(f'Wikidata 链接 {sum(1 for v in out.values() if v.get("wd"))}')
+    print(f'mesh 总数 {mesh_count}  运行时名歧义 {len(overrides)} 条已写入歧义表')
+    for rt, (k, s) in sorted(overrides.items()):
+        print(f'    {rt} -> {k}{("." + s) if s else ""}')
     by_layer = {}
     for layer, n in missing:
         by_layer.setdefault(layer, []).append(n)

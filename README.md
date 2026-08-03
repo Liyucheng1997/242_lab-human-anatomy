@@ -55,13 +55,32 @@
 网页右侧面板底部的「查看全部数据来源」可展开同一份清单；选中结构后，卡片内会给出该结构自己的
 Wikidata 链接。
 
+### 名字匹配的坑（改模型前必读）
+
+three.js 的 `GLTFLoader` 加载时会调用 `PropertyBinding.sanitizeNodeName()`，**把空格换成
+下划线并删掉 `[ ] . : /`**。所以 GLB 文件里的名字和运行时拿到的 `mesh.name` 并不一样：
+
+| GLB 文件里 | 运行时 |
+|-----------|--------|
+| `Pectoral fascia.l.001` | `Pectoral_fascial001` |
+| `Vertebra T7.001` | `Vertebra_T7001` |
+
+点被删掉后，侧别与编号后缀糊在词尾，无法用正则可靠切开——`Vertebra_T7001` 若贪婪剥掉
+结尾数字会得到 `Vertebra_T`，把 7 也丢了。`src/labels.js` 的做法是把各种候选切分逐个拿去
+词典里试，命中即止。
+
+极少数名字有多种都能命中词典的切法（`vertebra_t1001` 既可切成 `t1`+`001`，也可切成
+`t10`+`01`），这类靠字符串无法判定。构建脚本会依据**未经 sanitize 的原始名**把它们导出到
+`src/mesh-overrides.json`（目前 4 条，全是 T1 与 T10/T11/T12 之争），运行时优先查这张表。
+歧义与否由数据本身决定，换模型重跑即可，不依赖前端用哪种试探顺序。
+
 ### 重新生成数据表
 ```bash
 python assets_source/build_labels.py
 ```
 脚本直接读 `public/models/*.glb` 里的 mesh 名，与 `assets_source/terms/*.py` 中逐条编写的词条
-对表，并把 TA2 拉丁名与 Wikidata 条目号并进来，最后打印覆盖率与未覆盖清单。新增/替换模型后
-重跑即可看出还缺哪些结构。
+对表，把 TA2 拉丁名与 Wikidata 条目号并进来，生成 `src/anatomy.json` 与 `src/mesh-overrides.json`，
+最后打印覆盖率、未覆盖清单与歧义表。新增/替换模型后重跑即可看出还缺哪些结构。
 
 ## 运行
 ```bash
