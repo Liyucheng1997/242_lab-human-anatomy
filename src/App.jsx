@@ -3,6 +3,7 @@ import { Canvas } from '@react-three/fiber'
 import { OrbitControls, useGLTF, Bounds, Html } from '@react-three/drei'
 import * as THREE from 'three'
 import { lookup } from './labels.js'
+import { SOURCES } from './sources.js'
 
 // 各解剖系统图层（从 Z-Anatomy 的 Startup.blend 导出）
 const LAYERS = [
@@ -87,11 +88,30 @@ function Layer({ url, layerId, onPick, selected, hover }) {
   )
 }
 
+function SourceList() {
+  return (
+    <div className="sources">
+      <div className="lbl">数据来源</div>
+      <ul>
+        {SOURCES.map((s) => (
+          <li key={s.key}>
+            <span className="tag">{s.label}</span>
+            <a href={s.url} target="_blank" rel="noreferrer">{s.name}</a>
+            <em>{s.note}</em>
+          </li>
+        ))}
+      </ul>
+    </div>
+  )
+}
+
 function Panel({ info, active, toggle, layers }) {
+  const [showSources, setShowSources] = useState(false)
+
   return (
     <aside className="panel">
       <h1>人体结构</h1>
-      <p className="sub">交互式 3D 解剖图谱 · 原型</p>
+      <p className="sub">交互式 3D 解剖图谱 · 收录 1347 个结构</p>
 
       <div className="layers">
         {layers.map((l) => (
@@ -105,26 +125,48 @@ function Panel({ info, active, toggle, layers }) {
 
       {info ? (
         <div className="card">
-          <div className="zh">{info.zh || info.name}</div>
-          <div className="en">{info.name}</div>
-          {info.system && <div className="row"><span>系统</span><b>{info.system}</b></div>}
+          <div className="zh">{info.zh || info.en}</div>
+          <div className="en">{info.en}</div>
+          {info.la && <div className="la">{info.la}</div>}
+          {info.sys && <div className="row"><span>所属系统</span><b>{info.sys}</b></div>}
+          {info.side && <div className="row"><span>侧别</span><b>{info.side.replace(/[（）]/g, '')}</b></div>}
           {info.intro && (
             <div className="block"><div className="lbl">简介</div><p>{info.intro}</p></div>
           )}
           {info.func && (
             <div className="block"><div className="lbl">功能</div><p>{info.func}</p></div>
           )}
+          <div className="block refs">
+            <div className="lbl">来源</div>
+            <p>
+              中文名依《人体解剖学名词》第二版，拉丁名依 Terminologia Anatomica 2。
+              {info.wd && (
+                <>
+                  {' '}
+                  <a href={`https://www.wikidata.org/wiki/${info.wd}`} target="_blank" rel="noreferrer">
+                    在 Wikidata 核对本条（{info.wd}）
+                  </a>
+                </>
+              )}
+            </p>
+          </div>
           {!info.zh && (
-            <div className="todo">该结构中文说明待补充（可在 src/labels.js 添加）。</div>
+            <div className="todo">该结构尚未收录中文说明。</div>
           )}
         </div>
       ) : (
-        <div className="hint">悬停任意结构浮出名称，点击选中查看详情。<br/>拖拽旋转，滚轮缩放，上方切换图层。</div>
+        <div className="hint">悬停任意结构浮出名称，点击选中查看详情。<br />拖拽旋转，滚轮缩放，上方切换图层。</div>
       )}
 
       <div className="attribution">
-        模型来源：<a href="https://github.com/Z-Anatomy" target="_blank" rel="noreferrer">Z-Anatomy</a>
-        （CC-BY-SA 4.0，源自 BodyParts3D）。
+        <button className="link" onClick={() => setShowSources((v) => !v)}>
+          {showSources ? '收起数据来源 ▲' : '查看全部数据来源 ▼'}
+        </button>
+        {showSources && <SourceList />}
+        <p>
+          模型来源：<a href="https://github.com/Z-Anatomy" target="_blank" rel="noreferrer">Z-Anatomy</a>
+          （CC BY-SA 4.0，源自 BodyParts3D）。
+        </p>
       </div>
     </aside>
   )
@@ -142,7 +184,7 @@ export default function App() {
       const el = tipRef.current
       if (!el) return
       const r = lookup(name)
-      el.textContent = r.zh ? `${r.zh}  ·  ${name}` : name
+      el.textContent = r.zh ? `${r.zh}  ·  ${r.en}` : r.en
       el.style.left = x + 'px'
       el.style.top = y + 'px'
       el.style.opacity = '1'

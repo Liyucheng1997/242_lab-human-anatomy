@@ -25,13 +25,15 @@ body {
   pointer-events: none; opacity: 0; transition: opacity .1s;
 }
 .panel {
-  width: 320px;
+  width: 360px;
+  flex: 0 0 360px;
   padding: 24px 22px;
   background: #12161d;
   border-left: 1px solid #232a35;
   display: flex;
   flex-direction: column;
   gap: 16px;
+  overflow-y: auto;
 }
 .panel h1 { font-size: 22px; font-weight: 700; }
 .sub { color: #8a93a3; font-size: 13px; }
@@ -49,8 +51,9 @@ body {
   border-radius: 12px;
   padding: 16px;
 }
-.card .zh { font-size: 24px; font-weight: 700; color: #ff8a80; margin-bottom: 2px; }
-.card .en { font-size: 13px; color: #9aa4b2; margin-bottom: 12px; word-break: break-word; }
+.card .zh { font-size: 24px; font-weight: 700; color: #ff8a80; margin-bottom: 2px; line-height: 1.3; }
+.card .en { font-size: 13px; color: #9aa4b2; word-break: break-word; }
+.card .la { font-size: 12.5px; color: #7f8899; font-style: italic; margin-bottom: 12px; word-break: break-word; }
 .card .row { display: flex; justify-content: space-between; gap: 12px; font-size: 13px; padding: 6px 0; border-top: 1px solid #232a35; }
 .card .row span { color: #8a93a3; }
 .card .row b { color: #e6e9ef; text-align: right; word-break: break-all; }
@@ -58,6 +61,23 @@ body {
 .card .block .lbl { font-size: 12px; color: #7aa2f7; font-weight: 700; margin-bottom: 4px; letter-spacing: .05em; }
 .card .block p { font-size: 13.5px; line-height: 1.75; color: #d4dae4; }
 .card .todo { margin-top: 10px; font-size: 12px; color: #8a93a3; }
+.card .refs p { font-size: 12.5px; color: #99a2b0; }
+.card .refs a { color: #7aa2f7; }
 .hint { color: #8a93a3; font-size: 14px; line-height: 1.7; }
-.attribution { margin-top: auto; color: #6b7382; font-size: 12px; line-height: 1.6; }
+.attribution { margin-top: auto; padding-top: 12px; color: #6b7382; font-size: 12px; line-height: 1.6; }
 .attribution a { color: #7aa2f7; }
+.attribution p { margin-top: 10px; }
+.attribution .link {
+  background: none; border: none; padding: 0; cursor: pointer;
+  color: #7aa2f7; font-size: 12px; font-family: inherit;
+}
+.sources { margin-top: 10px; }
+.sources .lbl { font-size: 12px; color: #7aa2f7; font-weight: 700; margin-bottom: 6px; letter-spacing: .05em; }
+.sources ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.sources li { border-left: 2px solid #2a323f; padding-left: 10px; }
+.sources .tag {
+  display: inline-block; margin-bottom: 3px; padding: 1px 7px; border-radius: 4px;
+  background: #232a35; color: #9aa4b2; font-size: 11px;
+}
+.sources a { display: block; color: #a9bde0; }
+.sources em { display: block; margin-top: 2px; color: #6b7382; font-style: normal; }

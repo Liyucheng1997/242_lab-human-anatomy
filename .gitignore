@@ -10,9 +10,14 @@ assets_source/Z-Anatomy/
 assets_source/*.zip
 assets_source/*.7z
 
+# Python 缓存（build_labels.py）
+__pycache__/
+*.pyc
+
 # 系统/编辑器
 .DS_Store
 Thumbs.db
 *.log
 .vscode/
 .idea/
+.claude/
