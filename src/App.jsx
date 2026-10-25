@@ -1,9 +1,11 @@
-import React, { Suspense, useMemo, useRef, useState } from 'react'
+import React, { Suspense, lazy, useEffect, useMemo, useRef, useState } from 'react'
 import { Canvas } from '@react-three/fiber'
 import { OrbitControls, useGLTF, Bounds, Html } from '@react-three/drei'
 import * as THREE from 'three'
 import { lookup } from './labels.js'
 import { SOURCES } from './sources.js'
+
+const SwallowTopic = lazy(() => import('./swallow/SwallowTopic.jsx'))
 
 // 各解剖系统图层（从 Z-Anatomy 的 Startup.blend 导出）
 const LAYERS = [
@@ -172,7 +174,45 @@ function Panel({ info, active, toggle, layers }) {
   )
 }
 
+// 顶部模式切换：全身图谱 / 专题。用 URL hash 记住，便于直接分享专题链接。
+const MODES = [
+  { id: 'atlas', zh: '全身图谱' },
+  { id: 'swallow', zh: '专题：吞咽与呼吸' },
+]
+
+function ModeSwitch({ mode, setMode }) {
+  return (
+    <div className="mode-switch">
+      {MODES.map((m) => (
+        <button key={m.id} className={mode === m.id ? 'on' : ''} onClick={() => setMode(m.id)}>{m.zh}</button>
+      ))}
+    </div>
+  )
+}
+
+const modeFromHash = () => (window.location.hash === '#swallow' ? 'swallow' : 'atlas')
+
 export default function App() {
+  const [mode, setModeState] = useState(modeFromHash)
+  useEffect(() => {
+    const onHash = () => setModeState(modeFromHash())
+    window.addEventListener('hashchange', onHash)
+    return () => window.removeEventListener('hashchange', onHash)
+  }, [])
+  const setMode = (m) => { window.location.hash = m === 'atlas' ? '' : m; setModeState(m) }
+  const modeSwitch = <ModeSwitch mode={mode} setMode={setMode} />
+
+  if (mode === 'swallow') {
+    return (
+      <Suspense fallback={<div className="boot">加载专题…</div>}>
+        <SwallowTopic modeSwitch={modeSwitch} />
+      </Suspense>
+    )
+  }
+  return <Atlas modeSwitch={modeSwitch} />
+}
+
+function Atlas({ modeSwitch }) {
   const [selected, setSelected] = useState(null)
   const [info, setInfo] = useState(null)
   const [active, setActive] = useState(new Set(['skeleton']))
@@ -220,6 +260,7 @@ export default function App() {
           <OrbitControls makeDefault enableDamping />
         </Canvas>
         <div ref={tipRef} className="tooltip" />
+        <div className="stage-top">{modeSwitch}</div>
       </div>
       <Panel info={info} active={active} toggle={toggle} layers={LAYERS} />
     </div>
